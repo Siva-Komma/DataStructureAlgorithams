@@ -11,6 +11,8 @@ namespace DataStructureandAlgoritham
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Data Structure and Algoritham");
+            Anagram ana = new Anagram();    
+            ana.DisplayAnagram();
             Console.ReadLine();
         }
     }
