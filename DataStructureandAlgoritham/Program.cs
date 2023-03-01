@@ -12,7 +12,7 @@ namespace DataStructureandAlgoritham
         {
             Console.WriteLine("Welcome to Data Structure and Algoritham");
             Console.WriteLine("Choose your Option: ");
-            Console.WriteLine("1.Anagram\n2.Prime Number Range\n3.BubbleSort\n4.Insertion Sort");
+            Console.WriteLine("1.Anagram\n2.Prime Number Range\n3.BubbleSort\n4.Insertion Sort\n5.PrimeAnagramPalindrome");
             int Option=Convert.ToInt32(Console.ReadLine());
             switch(Option)
             {
@@ -29,6 +29,9 @@ namespace DataStructureandAlgoritham
                     break;
                 case 4:
                     InsertionSort.Sorting();
+                    break;
+                case 5:
+                    PrimeAnagramPalindrome.Checking();
                     break;
             }
             Console.ReadLine();
