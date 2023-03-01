@@ -11,8 +11,20 @@ namespace DataStructureandAlgoritham
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Data Structure and Algoritham");
-            Anagram ana = new Anagram();    
-            ana.DisplayAnagram();
+            Console.WriteLine("Choose your Option: ");
+            Console.WriteLine("1.Anagram\n2.Prime Number Range");
+            int Option=Convert.ToInt32(Console.ReadLine());
+            switch(Option)
+            {
+                case 1:
+                    Anagram ana = new Anagram();
+                    ana.DisplayAnagram();
+                    break;
+                case 2:
+                    PrimeNumbers.PrimeRange();
+                    Console.ReadLine();
+                    break;
+            }
             Console.ReadLine();
         }
     }
